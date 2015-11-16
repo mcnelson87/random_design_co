@@ -95,6 +95,29 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* GLOBALS */
+
+html  {
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+/* TOP BAR */
+
+h1  {
+ background-color: #000;
+}
+
+/* MAIN IMAGE */
+
+/* MAIN TEXT */
+
+/* PORTFOLIO */
+
+/* FOOTER */
+
 
 
 
