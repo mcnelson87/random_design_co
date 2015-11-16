@@ -106,10 +106,26 @@ box-sizing: inherit;
 
 /* TOP BAR */
 
-h1  {
+header {
  background-color: #000;
+ color: #fff;
+ position: fixed;
+ width: 100%;
+ padding: 1em;
+
 }
 
+h1  {
+  font-size: 1.5em;
+  float: left;
+  margin: 0;
+}
+
+i {
+  font-size: 1.5em;
+  float: right;
+  
+}
 /* MAIN IMAGE */
 
 /* MAIN TEXT */
