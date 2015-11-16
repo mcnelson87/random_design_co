@@ -128,7 +128,7 @@ i {
 }
 /* JUMBOTRON */
 
-#jumbotron  {
+.jumbotron  {
   padding: 0;
   position: relative;
   overflow: hidden;
@@ -137,15 +137,16 @@ i {
 
 }
 
-#jumbotron #hero-image {
+.jumbotron .hero-image {
   display: block;
   max-width: 100%;
+  width: 100%;
   position: relative;
+  margin: 3em, auto;
   z-index: -10;
 }
 
 .jumbotron-content {
-  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -156,6 +157,28 @@ i {
 .jumbotron-content h2 {
   font-size: 4em;
   line-height: 1;
+}
+
+.button  {
+  display: inline-block;
+  border: solid #fff .125em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: bolder;
+
+}
+
+.button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover  {
+  background: hsla(360, 100%, 100%, 100);
+}
+
+.button:hover a {
+  color: #000;
 }
 
 /* MAIN TEXT */
