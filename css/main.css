@@ -124,9 +124,39 @@ h1  {
 i {
   font-size: 1.5em;
   float: right;
-  
+
 }
-/* MAIN IMAGE */
+/* JUMBOTRON */
+
+#jumbotron  {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  max-height: 30em;
+  color: #fff;
+
+}
+
+#jumbotron #hero-image {
+  display: block;
+  max-width: 100%;
+  position: relative;
+  z-index: -10;
+}
+
+.jumbotron-content {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.jumbotron-content h2 {
+  font-size: 4em;
+  line-height: 1;
+}
 
 /* MAIN TEXT */
 
