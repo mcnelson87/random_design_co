@@ -104,6 +104,10 @@ html  {
 box-sizing: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* TOP BAR */
 
 header {
@@ -128,6 +132,20 @@ i {
 
 }
 /* JUMBOTRON */
+.button  {
+  display: inline-block;
+  border: solid #000 .125em;
+  padding: .5em 1em;
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #fff;
+}
+
+.button:hover  {
+  background: #000;
+  color: #fff;
+}
 
 .jumbotron  {
   padding: 0;
@@ -140,7 +158,6 @@ i {
 
 .jumbotron .hero-image {
   display: block;
-  max-width: 100%;
   width: 100%;
   position: relative;
   margin: 3em, auto;
@@ -160,30 +177,19 @@ i {
   line-height: 1;
 }
 
-.button  {
-  display: inline-block;
+.jumbotron-content .button  {
   border: solid #fff .125em;
-  padding: .5em 1em;
-  font-size: 1.5em;
-  font-weight: bolder;
-}
-
-.button a {
   color: #fff;
-  text-decoration: none;
 }
 
-.button:hover  {
-  background: hsla(360, 100%, 100%, 100);
-}
-
-.button:hover a {
+.jumbotron-content .button:hover  {
+  background: #fff;
   color: #000;
 }
 
 /* MAIN TEXT */
 
-#about  {
+.page-section  {
   padding: 1.5em 1em;
   border-bottom: 2px solid #efefef;
 }
@@ -195,7 +201,12 @@ i {
   border-bottom: 2px solid #efefef;
 }
 
-ul  {
+#latest_projects a  {
+  text-decoration: none;
+  color: #000;
+}
+
+#latest_projects ul  {
   list-style: none;
   width: 100%;
   display: inline-block;
@@ -206,45 +217,41 @@ ul  {
   margin: 0 auto;
 }
 
-ul a  {
-  text-decoration: none;
-  color: #000;
-}
-
-li  {
+#latest_projects li  {
   float: left;
-  width: 49%;
-  margin-left: .5%;
-  margin-bottom: .5%;
+  width: 50%;
+  border: 1px solid #fff;
   position: relative;
+  background-color: hsla(0,100%,100%,0.5);
 }
 
-li img  {
-  max-width: 100%;
-  opacity: 0.4;
-
+#latest_projects li img  {
+  position: relative;
+  z-index: -10;
 }
 
-.project-text  {
+#latest_projects li:hover {
+  background-color: hsla(0,0%,0%,0.5);
+}
+
+#latest_projects li:hover h3 a  {
+  color: #fff;
+}
+
+#latest_projects h3  {
   position: absolute;
   top: 50%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
-}
-
-.project-text a:hover {
-  color: #fff;
-}
-
-img:hover {
-  opacity: 1;
+  margin: 0;
 }
 
 /* FOOTER */
 footer  {
   clear: both;
   text-align: center;
+  font-size: 1.25em;
 }
 
 
